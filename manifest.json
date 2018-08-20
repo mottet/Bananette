@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Bananette",
+  "version": "0.1",
+
+  "description": "Remove unwanted Youtube video recommandation.",
+
+  "icons": {
+    "48": "icons/banana-icon-48.png",
+    "96": "icons/banana-icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["remove-recommandation.js"]
+    }
+  ]
+
+}
